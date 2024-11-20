@@ -3,8 +3,7 @@ import numpy as np
 # Константы
 g = 9.81  # Ускорение свободного падения, м/с^2
 R = 287.05  # Газовая постоянная для воздуха, Дж/(кг·К)
-
-# Функции
+#каждая функция - каждая формула
 def gas_density(temperature, pressure):
     """Расчет плотности газа по уравнению состояния идеального газа."""
     return pressure / (R * temperature)
@@ -22,13 +21,11 @@ def bernoulli_pressure_increase(density, velocity_in, velocity_out):
 def lift_force(density, velocity, cl, area):
     """Расчет подъемной силы на лопасти."""
     return 0.5 * density * velocity**2 * cl * area
-
-# Функция для ввода данных и расчетов
+#
 def calculate_fan_parameters():
     print("Введите начальные данные:")
     
     try:
-        # Ввод данных пользователем
         temperature = float(input("Температура воздуха (в Кельвинах): "))
         pressure_in = float(input("Давление на входе (в Па): "))
         velocity_in = float(input("Скорость на входе (в м/с): "))
@@ -54,7 +51,7 @@ def calculate_fan_parameters():
     except ValueError:
         print("Ошибка ввода! Пожалуйста, вводите только числовые значения.")
 
-# Запуск программы
+#Запуск (defolt)
 if __name__ == "__main__":
     while True:
         print("\n=== Расчет параметров вентилятора ===")
@@ -65,7 +62,7 @@ if __name__ == "__main__":
         if choice == "1":
             calculate_fan_parameters()
         elif choice == "2":
-            print("Выход из программы. Спасибо за использование!")
+            print("Спасибо за использование!")
             break
         else:
             print("Неверный выбор. Попробуйте снова.")
