@@ -34,7 +34,7 @@ def bernoulli_pressure_increase(density, velocity_in, velocity_out):
 def calculate():
     try:
         # Ввод данных
-        temperature = float(entry_temperature.get())  # В °C
+        temperature = float(entry_temperature.get())  # В C
         pressure_in = float(entry_pressure.get()) * 101325  # Атмосферы в Па
         velocity_in = float(entry_velocity_in.get())
         velocity_out = float(entry_velocity_out.get())
