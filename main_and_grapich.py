@@ -38,7 +38,7 @@ def calculate():
         pressure_in = float(entry_pressure.get()) * 101325  # Атмосферы в Па
         velocity_in = float(entry_velocity_in.get())
         velocity_out = float(entry_velocity_out.get())
-        rpm = float(entry_rpm.get())
+        rpm = float(entry_rpm.get())    
         blade_length = float(entry_blade_length.get())  # В метрах
         angle = float(entry_angle.get())  # Угол атаки в градусах
         
